@@ -1,7 +1,8 @@
 
-1. pip install requests (used to get data from sites)
+1. requests==2.24.0
 
-2. request headers 
+2. request headers are used in views.py file.  And the code segement is given below:
+
     USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
     LANGUAGE = "en-US,en;q=0.5"
     session = requests.Session()
@@ -9,4 +10,4 @@
     session.headers['Accept-Language'] = LANGUAGE
     session.headers['Content-Language'] = LANGUAGE
 
-3. pip install beautifulsoup4 (parse HTML and XML documents to get data for web scraping)
+3. beautifulsoup4==4.9.3
